@@ -1,46 +1,35 @@
-.page-container {
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 15px;
+/* GLOBAL FONT */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  
+  background-color: #f9fafb;
+  color: #1f2937;
+  line-height: 1.6;
 }
 
-input {
-  padding: 8px;
-  font-size: 14px;
+/* FORM ELEMENTS */
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
 }
 
-.button {
-  padding: 10px;
-  font-size: 16px;
-  margin-top: 10px;
-  cursor: pointer;
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
 }
 
-.login-button {
-  background-color: #62a0e2;
-  color: white;
-  border: none;
-}
-
-.register-button {
-  background-color: #5ece78;
-  color: white;
-  border: none;
-}
-
-.navigation {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-around;
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
 }

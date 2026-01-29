@@ -1,9 +1,4 @@
-import React from 'react'
-
 const AdminDashboard = () => {
-  return (
-    <div>AdminDashboard</div>
-  )
-}
-
-export default AdminDashboard
+  return <h1 style={{ padding: "2rem" }}>Admin Dashboard</h1>;
+};
+export default AdminDashboard;

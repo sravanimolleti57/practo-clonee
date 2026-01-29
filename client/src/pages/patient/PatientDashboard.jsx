@@ -1,9 +1,4 @@
-import React from 'react'
-
 const PatientDashboard = () => {
-  return (
-    <div>PatientDashboard</div>
-  )
-}
-
-export default PatientDashboard
+  return <h1 style={{ padding: "2rem" }}>Patient Dashboard</h1>;
+};
+export default PatientDashboard;

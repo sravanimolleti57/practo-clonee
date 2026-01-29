@@ -16,7 +16,7 @@ const NavbarComp = () => {
       {/* Centered content container */}
       <div
         style={{
-          maxWidth: "1200px", // limits width on large screens
+          maxWidth: "13000px", // limits width on large screens
           margin: "0 auto",   // centers the content
           padding: "1rem 2rem",
           display: "flex",
