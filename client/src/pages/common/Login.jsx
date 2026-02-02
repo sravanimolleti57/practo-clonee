@@ -19,7 +19,7 @@ const Login = () => {
       return;
     }
 
-    // TEMP LOGIN (backend later)
+    
     if (role === "admin") navigate("/admin/dashboard");
     if (role === "doctor") navigate("/doctor/dashboard");
     if (role === "patient") navigate("/patient/dashboard");
@@ -40,7 +40,7 @@ const Login = () => {
           <form onSubmit={handleSubmit} style={formStyle}>
             <input
               type="email"
-              placeholder="Email"
+              placeholder="Email *"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -49,7 +49,7 @@ const Login = () => {
 
             <input
               type="password"
-              placeholder="Password"
+              placeholder="Password *"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required

@@ -1,23 +1,41 @@
 import React, { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import NavbarComp from "../../components/NavbarComp";
 import registerAnimation from "../../assets/register.json";
 
 const Register = () => {
+  const navigate = useNavigate();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Name:", name, "Email:", email, "Password:", password);
+
+    if (password !== confirmPassword) {
+      alert("Passwords do not match");
+      return;
+    }
+
+    // You can connect backend API here later
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Password:", password);
+
+    alert("Registration Successful!");
+
+    // Redirect to login page
+    navigate("/login");
   };
 
   return (
     <div style={{ minHeight: "100vh", position: "relative", overflow: "hidden" }}>
       <NavbarComp />
 
-      {/* Lottie Background */}
+      {/* Background Animation */}
       <div
         style={{
           position: "absolute",
@@ -26,13 +44,13 @@ const Register = () => {
           width: "100%",
           height: "100%",
           zIndex: 0,
-          opacity: 0.3, // make it subtle
+          opacity: 0.3,
         }}
       >
         <Lottie animationData={registerAnimation} loop />
       </div>
 
-      {/* Register Card */}
+      {/* Register Form */}
       <div
         style={{
           position: "relative",
@@ -56,43 +74,57 @@ const Register = () => {
           }}
         >
           <h2 style={{ marginBottom: "1.5rem" }}>Register</h2>
+
           <form
             onSubmit={handleSubmit}
             style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
           >
             <input
               type="text"
-              placeholder="Full Name"
+              placeholder="Full Name *"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
               style={inputStyle}
             />
+
             <input
               type="email"
-              placeholder="Email"
+              placeholder="Email *"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
               style={inputStyle}
             />
+
             <input
               type="password"
-              placeholder="Password"
+              placeholder="Password *"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
               style={inputStyle}
             />
+
+            <input
+              type="password"
+              placeholder="Confirm Password *"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              required
+              style={inputStyle}
+            />
+
             <button type="submit" style={buttonStyle}>
               Register
             </button>
           </form>
+
           <p style={{ marginTop: "1rem" }}>
             Already have an account?{" "}
-            <a href="/login" style={{ color: "#2575fc", fontWeight: "bold" }}>
+            <Link to="/login" style={{ color: "#2575fc", fontWeight: "bold" }}>
               Login
-            </a>
+            </Link>
           </p>
         </div>
       </div>

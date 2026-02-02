@@ -22,73 +22,64 @@ const Contact = () => {
   };
 
   return (
-    <div style={{ minHeight: "100vh", position: "relative", backgroundColor: "#f5f9ff" }}>
+    <div style={{ minHeight: "100vh", backgroundColor: "#f5f9ff" }}>
       <NavbarComp />
 
-      {/* Lottie Background */}
       <div
         style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          zIndex: 0,
-          opacity: 0.2, // subtle background
-        }}
-      >
-        <Lottie animationData={contactAnimation} loop />
-      </div>
-
-      {/* Contact Form at Top */}
-      <div
-        style={{
-          position: "relative",
-          zIndex: 1,
           display: "flex",
+          alignItems: "center",
           justifyContent: "center",
-          alignItems: "flex-start",
-          padding: "2rem",
+          padding: "3rem",
+          gap: "3rem",
         }}
       >
-        <div style={cardStyle}>
-          <h2 style={{ marginBottom: "1rem" }}>Contact Us</h2>
+       
+        <div style={{ flex: 1, maxWidth: "500px" }}>
+          <Lottie animationData={contactAnimation} loop />
+        </div>
 
-          <form onSubmit={handleSubmit} style={formStyle}>
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              value={form.name}
-              onChange={handleChange}
-              required
-              style={inputStyle}
-            />
+        
+        <div style={{ flex: 1, display: "flex", justifyContent: "center" }}>
+          <div style={cardStyle}>
+            <h2 style={{ marginBottom: "1rem" }}>Contact Us!!</h2>
 
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              value={form.email}
-              onChange={handleChange}
-              required
-              style={inputStyle}
-            />
+            <form onSubmit={handleSubmit} style={formStyle}>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={form.name}
+                onChange={handleChange}
+                required
+                style={inputStyle}
+              />
 
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              value={form.message}
-              onChange={handleChange}
-              required
-              rows="4"
-              style={{ ...inputStyle, resize: "none" }}
-            />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                value={form.email}
+                onChange={handleChange}
+                required
+                style={inputStyle}
+              />
 
-            <button type="submit" style={buttonStyle}>
-              Send Message
-            </button>
-          </form>
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                value={form.message}
+                onChange={handleChange}
+                required
+                rows="4"
+                style={{ ...inputStyle, resize: "none" }}
+              />
+
+              <button type="submit" style={buttonStyle}>
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -97,7 +88,7 @@ const Contact = () => {
 
 /* ---------- STYLES ---------- */
 const cardStyle = {
-  backgroundColor: "#f7f1f803",
+  backgroundColor: "#ffffff",
   padding: "2.5rem",
   borderRadius: "15px",
   boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
