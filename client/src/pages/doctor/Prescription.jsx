@@ -25,7 +25,7 @@ const Prescription = () => {
 };
 
 const card = {
-  background: "#ade9cc",
+  background: "#d092f0",
   padding: "1rem",
   marginBottom: "1rem",
   borderRadius: "10px",
