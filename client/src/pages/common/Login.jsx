@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
 import NavbarComp from "../../components/NavbarComp";
-import loginAnimation from "../../assets/about.json.json";
+import loginAnimation from "../../assets/Login.json.json";
 
 const Login = () => {
   const [email, setEmail] = useState("");
