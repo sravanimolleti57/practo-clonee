@@ -1,0 +1,56 @@
+.admin-dashboard {
+  background-color: #f4f6f9;
+  min-height: 100vh;
+}
+
+.admin-dashboard-container {
+  padding: 30px 40px; /* Proper side padding */
+}
+
+.admin-dashboard-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #093a90;
+}
+
+/* Grid Layout */
+.admin-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 30px;
+  width: 100%; /* Full width */
+}
+
+/* Card */
+.admin-dashboard-card {
+  background: #eba7ed; /* Light Green */
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.admin-dashboard-card h3 {
+  margin-top: 15px;
+  color: #022003; /* Dark green text */
+}
+
+/* Lottie animation inside card */
+.admin-card-lottie {
+  height: 150px;
+  width: auto;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .admin-dashboard-grid {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+}

@@ -1,0 +1,32 @@
+.patient-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .patient-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.patient-dashboard-card {
+  background-color: #aeeb96;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.patient-dashboard-card:hover {
+  transform: scale(1.03);
+}
+
+.patient-dashboard-card h3 {
+  margin-top: 1rem;
+  text-align: center;
+}

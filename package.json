@@ -1,0 +1,27 @@
+{
+  "name": "practo-clonee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sravanimolleti57/practo-clonee.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sravanimolleti57/practo-clonee/issues"
+  },
+  "homepage": "https://github.com/sravanimolleti57/practo-clonee#readme",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}
