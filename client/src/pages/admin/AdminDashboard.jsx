@@ -4,10 +4,10 @@ import Lottie from "lottie-react";
 import NavbarComp from "../../components/NavbarComp";
 import "./AdminDashboard.css";
 
-import manageDoctorsAnim from "../../assets/profile.json";
-import managePatientsAnim from "../../assets/book.json";
-import manageAppointmentsAnim from "../../assets/appointment.json";
-import reportsAnim from "../../assets/records.json";
+import manageDoctorsAnim from "../../assets/profile.json.json";
+import managePatientsAnim from "../../assets/book.json.json";
+import manageAppointmentsAnim from "../../assets/appointment.json.json";
+import reportsAnim from "../../assets/records.json.json";
 
 const dashboardCards = [
   { title: "Manage Doctors", link: "/admin/manage-doctors", anim: manageDoctorsAnim },

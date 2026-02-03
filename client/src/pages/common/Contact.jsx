@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Lottie from "lottie-react";
 import NavbarComp from "../../components/NavbarComp";
-import contactAnimation from "../../assets/contact.json";
+import contactAnimation from "../../assets/contact.json.json";
 
 const Contact = () => {
   const [form, setForm] = useState({

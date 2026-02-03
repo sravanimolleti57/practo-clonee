@@ -4,10 +4,10 @@ import NavbarComp from "../../components/NavbarComp";
 import Lottie from "lottie-react";
 import "./DoctorDashboard.css";
 
-import appointmentAnim from "../../assets/appointment.json";
-import bookAnim from "../../assets/book.json";
-import profileAnim from "../../assets/profile.json";
-import recordsAnim from "../../assets/records.json";
+import appointmentAnim from "../../assets/appointment.json.json";
+import bookAnim from "../../assets/book.json.json";
+import profileAnim from "../../assets/home.json.json";
+import recordsAnim from "../../assets/records.json.json";
 
 const dashboardCards = [
   {

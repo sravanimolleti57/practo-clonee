@@ -1,7 +1,7 @@
 import React from "react";
 import Lottie from "lottie-react";
 import NavbarComp from "../../components/NavbarComp";
-import homeAnimation from "../../assets/home.json";
+import homeAnimation from "../../assets/home.json.json";
 
 const Home = () => {
   return (
