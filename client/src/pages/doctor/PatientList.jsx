@@ -25,7 +25,7 @@ const PatientList = () => {
 };
 
 const card = {
-  background: "#fff",
+  background: "#e8efb4",
   padding: "1rem",
   marginBottom: "1rem",
   borderRadius: "10px",

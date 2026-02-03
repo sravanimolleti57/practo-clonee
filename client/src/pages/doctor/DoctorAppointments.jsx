@@ -26,7 +26,7 @@ const DoctorAppointments = () => {
 };
 
 const card = {
-  background: "#fff",
+  background: "#f885ae",
   padding: "1rem",
   marginBottom: "1rem",
   borderRadius: "10px",

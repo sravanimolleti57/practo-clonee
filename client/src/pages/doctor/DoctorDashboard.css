@@ -1,31 +1,50 @@
-.dashboard-grid {
+.doctor-dashboard {
+  background-color: #f4f6f9;
+  min-height: 100vh;
+}
+
+.doctor-dashboard-container {
+  padding: 30px 40px; /* Add proper side padding */
+}
+
+.doctor-dashboard-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #093a90;
+}
+
+/* Grid Layout - Full Width */
+.doctor-dashboard-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;   /* Full width */
 }
 
-@media (max-width: 768px) {
-  .dashboard-grid {
-    grid-template-columns: 1fr; 
-  }
-}
-
-.dashboard-card {
-  background-color: #fff;
+/* Card */
+.doctor-dashboard-card {
+  background: #8ee7ef; /* Light Green */
+  padding: 30px 20px;
   border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   cursor: pointer;
   transition: 0.3s;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: center;
 }
 
-.dashboard-card:hover {
-  transform: scale(1.03);
-  background-color: #f0f4ff;
+.doctor-dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-dashboard-card h3 {
+  margin-top: 15px;
+  color: #022003; /* Dark green text */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .doctor-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
 }

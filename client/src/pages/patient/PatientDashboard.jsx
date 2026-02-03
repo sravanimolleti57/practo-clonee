@@ -24,11 +24,11 @@ const PatientDashboard = () => {
       <NavbarComp />
       <h2 style={{ marginBottom: "2rem", color: "#093a90" }}>Patient Dashboard</h2>
 
-      <div className="dashboard-grid">
+      <div className="patient-dashboard-grid">
         {dashboardCards.map((card, index) => (
           <div
             key={index}
-            className="dashboard-card"
+            className="patient-dashboard-card"
             onClick={() => navigate(card.link)} // ✅ safe navigation
           >
             <Lottie animationData={card.lottie} loop style={{ height: 150 }} />
